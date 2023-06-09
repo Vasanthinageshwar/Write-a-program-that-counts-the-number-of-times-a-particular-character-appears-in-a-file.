@@ -1,0 +1,30 @@
+Write a program that counts the number of times a particular character, appears in a
+file. The character can be read from the user through keyboard. You can use srm.txt as
+the input file.
+
+CODE:
+class Main
+{
+public static int count(String s, char c)
+{
+int res = 0;
+
+for (int i=0; i&lt;s.length(); i++)
+{
+// checking character in string
+if (s.charAt(i) == c)
+res++;
+}
+return res;
+}
+
+// Driver method
+public static void main(String args[])
+{
+String str= &quot;SRM University, Andhra Pradesh, also known as SRM University, Amaravati, is a
+private university located near Neerukonda village in Mangalagiri mandal of Guntur district in
+Andhra Pradesh, India, in the area of the planned capital city Amaravati.&quot;;
+char c = &#39;e&#39;;
+System.out.println(count(str, c));
+}
+}
